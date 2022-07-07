@@ -1,6 +1,5 @@
 import Header from "./components/Header";
 import Tasks from "./components/Tasks";
-import Task from "./components/Task";
 import AddTask from "./components/AddTask";
 import Footer from "./components/Footer";
 import About from "./components/About";
@@ -27,6 +26,7 @@ function App() {
 
     return data;
   };
+
   const fetchTask = async (id) => {
     const res = await fetch(`http://localhost:5000/tasks/${id}`);
     const data = await res.json();
